@@ -111,26 +111,9 @@ const Navbar: React.FC<NavbarProps> = ({
             : 'ic:round-contrast'
       }
     />,
-    <Icon
-      onClick={() => window.open('https://discord.gg/SDbbn3hT4b', '_blank')}
-      style={{ cursor: 'pointer' }}
-      fontSize={30}
-      icon={'ic:baseline-discord'}
-    />,
-    <iframe
-      src="https://ghbtns.com/github-btn.html?user=iib0011&repo=omni-tools&type=star&count=true&size=large"
-      frameBorder="0"
-      scrolling="0"
-      width="150"
-      height="30"
-      title="GitHub"
-    ></iframe>,
     <Button
       onClick={() => {
-        window.open(
-          'https://drive.google.com/file/d/1-r9-rDYnDJic9dnDywKTAsueehIAVp5F/view?usp=sharing',
-          '_blank'
-        );
+        window.open('mailto:contact@imoogle.tech', '_blank');
       }}
       sx={{ borderRadius: '100px' }}
       variant={'contained'}
@@ -138,11 +121,11 @@ const Navbar: React.FC<NavbarProps> = ({
         <Icon
           style={{ cursor: 'pointer' }}
           fontSize={25}
-          icon={'hugeicons:job-search'}
+          icon={'ic:baseline-email'}
         />
       }
     >
-      {t('navbar.hireMe')}
+      Contact Us
     </Button>
   ];
   const drawerList = (
